@@ -3,5 +3,5 @@
 
 程式預覽圖:
 
-![](https://lh3.google.com/u/2/d/1Vkj5Nq9EHc6SvJhL7ENhZ4qL_vGBOVku=w1920-h886-iv1)
+![](https://lh3.googleusercontent.com/35tMCED7YpMl9Yve7SYVXDFVN2kwqBxMTR2iN64IPeBdpX5JSiiBRr-0mVrhaYb3ynWGp6kWUebLE9za1oME=w1920-h459)
  
