@@ -68,20 +68,15 @@ namespace 今天吃啥
 
         private void runIt_Click(object sender, EventArgs e)
         {
-
             if (getDataPath == null)
             {
                 getDataPath = @"data.txt";
             }
 
 
-
-            if (File.Exists(@"data.txt") == false)
+            if (File.Exists(@getDataPath) == true)
             {
 
-            }
-            else 
-            {
                 if (priceFilter.Checked == false)
                 {
                     RestaurantNameAndPrice nameAndPrice = new RestaurantNameAndPrice();
@@ -117,14 +112,16 @@ namespace 今天吃啥
                     {
                         String[] nameAndPrice_ = nameAndPrice.GetName(getDataPath);
                         Console.WriteLine(nameAndPrice_[0] + nameAndPrice_[1]);
-                        FirstRestaurant.Text = nameAndPrice_[0];
                         restaurantPrice = Convert.ToInt32(nameAndPrice_[1]);
+                            FirstRestaurant.Text = nameAndPrice_[0];
+
                     } while (restaurantPrice > priceSet);
                 }
 
-                
-
-
+            }
+            else 
+            {
+                MessageBox.Show("請選擇資料清單或者確認本程式目錄下是否有data.txt檔案","哎呀 出現錯誤了!",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
 
             }
