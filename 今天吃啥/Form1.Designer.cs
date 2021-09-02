@@ -43,6 +43,8 @@ namespace 今天吃啥
             this.FirstRestaurant = new System.Windows.Forms.Label();
             this.SecondRestaurant = new System.Windows.Forms.Label();
             this.ThirdRestaurant = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataFrom
@@ -120,11 +122,18 @@ namespace 今天吃啥
             resources.ApplyResources(this.ThirdRestaurant, "ThirdRestaurant");
             this.ThirdRestaurant.Name = "ThirdRestaurant";
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ThirdRestaurant);
             this.Controls.Add(this.SecondRestaurant);
             this.Controls.Add(this.FirstRestaurant);
@@ -140,6 +149,7 @@ namespace 今天吃啥
             this.Controls.Add(this.dataFrom);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +170,7 @@ namespace 今天吃啥
         private System.Windows.Forms.Label FirstRestaurant;
         private System.Windows.Forms.Label SecondRestaurant;
         private System.Windows.Forms.Label ThirdRestaurant;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
